@@ -1,0 +1,7 @@
+from ultralytics import YOLO
+
+model = YOLO("yolov8n.pt")
+# model = YOLO("best.pt")
+
+model.export(format="onnx")
+
